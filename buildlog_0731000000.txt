@@ -1,0 +1,106 @@
+
+**********************************************************
+====== Start Date 07-30 =====
+Log started: 30 Jul 2018 1:29:27am
+
+[01:29:27]: ====== Start Date 07-30 =====
+[01:29:27]: listening to port: 29034
+[01:29:27]: daily build trigger thread started.
+[01:29:27]: heartbeat detection thread started.
+
+**********************************************************
+====== Start Date 07-30 =====
+Log started: 30 Jul 2018 2:16:43pm
+
+[14:16:43]: ====== Start Date 07-30 =====
+[14:16:43]: listening to port: 19587
+[14:16:43]: daily build trigger thread started.
+[14:16:43]: heartbeat detection thread started.
+[00:00:00]: 00:00 detected, starting daily build 0731
+[00:00:00]: build start for target "daily" and path "".
+[00:00:00]: starting step 1: git pull for mini5-build
+[00:00:12]: logs as below:
+[00:00:12]: Updating 0c86eb9..3aaf8af
+Fast-forward
+ .gitignore             | 1 +
+ abc.txt                | 0
+ shift.txt              | 0
+ test.txt               | 0
+ weekly/a b c/123.txt   | 0
+ weekly/asdfg/aaaaa.txt | 0
+ weekly/hhhhh/12345.txt | 0
+ 7 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ delete mode 100644 abc.txt
+ delete mode 100644 shift.txt
+ delete mode 100644 test.txt
+ delete mode 100644 weekly/a b c/123.txt
+ delete mode 100644 weekly/asdfg/aaaaa.txt
+ delete mode 100644 weekly/hhhhh/12345.txt
+
+[00:00:12]: step 1 succeeded.
+[00:00:12]: starting step 2: git pull for mini5-log
+[00:00:15]: logs as below:
+[00:00:15]: Already up to date.
+
+[00:00:15]: step 2 succeeded.
+[00:00:15]: starting step 3: git pull for target
+[00:00:15]: git pulling for mini5.
+[00:00:55]: logs as below:
+[00:00:55]: Updating 9f1f698..5442049
+Fast-forward
+ .../HAWindowsDLLWrapper_DynamicLibrary.vcxproj     |     28 +-
+ ...indowsDLLWrapper_DynamicLibrary.vcxproj.filters |     74 +-
+ .../HAWindowsDLLWrapper/HAWindowsDLLWrapper.jucer  |     39 +-
+ .../JuceLibraryCode/BinaryData.cpp                 | 258891 +++++++----------
+ .../JuceLibraryCode/BinaryData.h                   |     14 +-
+ .../JuceLibraryCode/BinaryData2.cpp                |   1671 +-
+ .../HAiOSWrapper_StaticLibrary.vcxproj             |     22 +-
+ .../HAiOSWrapper_StaticLibrary.vcxproj.filters     |     67 +-
+ .../iOS/HAiOSWrapper.xcodeproj/project.pbxproj     |     66 +-
+ .../HardcoreAudio/HAiOSWrapper/HAiOSWrapper.jucer  |     30 +-
+ .../HAiOSWrapper/JuceLibraryCode/BinaryData.cpp    | 258896 +++++++-----------
+ .../HAiOSWrapper/JuceLibraryCode/BinaryData.h      |     15 +-
+ .../HAiOSWrapper/JuceLibraryCode/BinaryData2.cpp   |   1348 +
+ .../HAiOSWrapper/Source/HardcoreAudioInterface.cpp |     12 +-
+ .../juce/HardcoreAudio/Resource/unity_cut2.wav     |    Bin 10945630 -> 0 bytes
+ .../juce/HardcoreAudio/Source/BandConnection.cpp   |    226 +
+ .../juce/HardcoreAudio/Source/BandConnection.h     |     38 +
+ .../proj/juce/HardcoreAudio/Source/BandServer.cpp  |     17 +
+ .../proj/juce/HardcoreAudio/Source/BandServer.h    |     25 +
+ .../proj/juce/HardcoreAudio/Source/Client.cpp      |     12 +-
+ .../proj/juce/HardcoreAudio/Source/Client.h        |      2 +-
+ .../HardcoreAudio/Source/ConnectionManager.cpp     |    108 +
+ .../juce/HardcoreAudio/Source/ConnectionManager.h  |     39 +
+ .../proj/juce/HardcoreAudio/Source/Global.cpp      |     19 +
+ .../proj/juce/HardcoreAudio/Source/Global.h        |     73 +
+ .../juce/HardcoreAudio/Source/HardcoreAudio.cpp    |     41 +-
+ .../proj/juce/HardcoreAudio/Source/HardcoreAudio.h |     14 +-
+ .../proj/juce/HardcoreAudio/Source/RoomManager.cpp |    180 +
+ .../proj/juce/HardcoreAudio/Source/RoomManager.h   |     38 +
+ .../proj/juce/HardcoreAudio/Source/fmttm4.wav      |    Bin 0 -> 7939626 bytes
+ .../proj/juce/HardcoreAudio/Source/hit_sound.wav   |    Bin 0 -> 41550 bytes
+ .../proj/juce/HardcoreAudio/Source/miss_sound.wav  |    Bin 0 -> 64590 bytes
+ 32 files changed, 214799 insertions(+), 307206 deletions(-)
+ create mode 100644 development/proj/juce/HardcoreAudio/HAiOSWrapper/JuceLibraryCode/BinaryData2.cpp
+ delete mode 100644 development/proj/juce/HardcoreAudio/Resource/unity_cut2.wav
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/BandConnection.cpp
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/BandConnection.h
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/BandServer.cpp
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/BandServer.h
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/ConnectionManager.cpp
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/ConnectionManager.h
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/Global.cpp
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/Global.h
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/RoomManager.cpp
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/RoomManager.h
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/fmttm4.wav
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/hit_sound.wav
+ create mode 100644 development/proj/juce/HardcoreAudio/Source/miss_sound.wav
+
+[00:00:55]: step 3 succeeded.
+[00:00:55]: starting step 4: juce xcodebuild
+[00:00:55]: starting xcodebuild for target "daily" and path "".
+[00:00:55]: logs as below:
+[00:00:55]: 
+[00:00:55]: step 4: "juce xcodebuild" failed.
