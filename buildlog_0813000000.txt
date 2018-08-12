@@ -1,0 +1,13 @@
+
+**********************************************************
+====== Start Date 08-12 =====
+Log started: 12 Aug 2018 12:01:25am
+
+[00:01:25]: ====== Start Date 08-12 =====
+[00:00:00]: 00:00 detected, starting daily build 0813
+[00:00:00]: build start for target "daily" and path "".
+[00:00:00]: ==========starting build for Debug configuration (if needed)==========
+[00:00:00]: starting step 1: git pull for mini5-build
+[00:01:15]: logs as below:
+[00:01:15]: 
+[00:01:16]: step 1: "git pull for mini5-build" failed.
